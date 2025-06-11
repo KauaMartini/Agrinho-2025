@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: Desafios e Oportunidades na Produção Alimentar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Desafios e Oportunidades na Produção Alimentar</h1>
+        <p class="subtitle">Um Projeto do Ensino Médio</p>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <h2>Apresentação do Projeto</h2>
+            <div class="project-info">
+                <p><strong>Aluno:</strong> Kauã Martini Adão</p>
+                <p><strong>Turma:</strong> 2º E - Ensino Médio</p>
+                <p><strong>Escola:</strong> Colégio Estadual Profª Maria de Lurdes Rodrigues Morozowski</p>
+                <p><strong>Cidade/Estado:</strong> Paranaguá / Paraná</p>
+                <p class="abstract">Este projeto explora a **relação vital entre campo e cidade** no contexto da produção de alimentos, destacando os desafios enfrentados e as oportunidades emergentes para um futuro mais sustentável e seguro em termos alimentares.</p>
+            </div>
+        </section>
+
+        <section class="desafios">
+            <h2>Principais Desafios</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Segurança Alimentar</h3>
+                    <p>Como garantir acesso universal a alimentos nutritivos, combatendo a fome e o desperdício em nossa sociedade.</p>
+                </div>
+                <div class="card">
+                    <h3>Sustentabilidade Ambiental</h3>
+                    <p>A necessidade de práticas agrícolas que preservem os recursos naturais, como solo e água, e a biodiversidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Logística e Distribuição</h3>
+                    <p>As barreiras no transporte e armazenamento de alimentos, causando perdas e encarecendo o produto final.</p>
+                </div>
+                <div class="card">
+                    <h3>Acesso à Tecnologia</h3>
+                    <p>A disparidade no acesso a inovações tecnológicas entre grandes e pequenos produtores rurais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="oportunidades">/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #28a745; /* Verde vibrante */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p.subtitle { /* Estilo específico para o subtítulo do header */
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #28a745;
+    border-radius: 2px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos para a seção de informações do projeto */
+.introducao .project-info {
+    background-color: #e6ffe6; /* Um verde bem claro */
+    border-left: 5px solid #28a745;
+    padding: 25px 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.introducao .project-info p {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    color: #333;
+    text-align: left; /* Alinha o texto das informações à esquerda */
+}
+
+.introducao .project-info p strong {
+    color: #1e7e34; /* Um verde mais escuro para os títulos */
+}
+
+.introducao .project-info p.abstract {
+    margin-top: 20px;
+    font-style: italic;
+    color: #444;
+    text-align: justify;
+}
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    color: #28a745;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+    flex-grow: 1; /* Garante que os parágrafos ocupem o espaço disponível */
+}
+
+/* Estilo para a seção de conclusão */
+.conclusao {
+    text-align: center;
+    background-color: #e6ffe6; /* Um verde bem claro */
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.conclusao h2 {
+    color: #1e7e34; /* Um verde mais escuro */
+    margin-bottom: 20px;
+}
+
+.conclusao p {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+}
+
+.conclusao p.final-message {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0; /* Espaçamento entre as linhas do rodapé */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p.subtitle {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; /* Coluna única em telas menores */
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .introducao .project-info {
+        padding: 20px;
+    }
+
+    .conclusao {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 25px;
+    }
+}
+            <h2>Oportunidades Promissoras</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Fortalecimento da Agricultura Familiar</h3>
+                    <p>Apoiar e incentivar os pequenos produtores, que são a base da nossa produção de alimentos.</p>
+                </div>
+                <div class="card">
+                    <h3>Adoção de Agroecologia e Orgânicos</h3>
+                    <p>Promover métodos de cultivo que respeitam o meio ambiente e atendem à crescente demanda por alimentos saudáveis.</p>
+                </div>
+                <div class="card">
+                    <h3>Inovação com Agritech</h3>
+                    <p>Uso de tecnologias como drones e sensores para otimizar a produção e a rastreabilidade dos alimentos.</p>
+                </div>
+                <div class="card">
+                    <h3>Estímulo ao Consumo Consciente</h3>
+                    <p>Conscientizar os consumidores urbanos sobre a importância de produtos locais, sazonais e sustentáveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="conclusao">
+            <h2>Conclusão: Caminho para um Futuro Sustentável</h2>
+            <p>A superação dos desafios e o aproveitamento das oportunidades na produção alimentar dependem de uma **colaboração efetiva entre o campo e a cidade**. Ao promovermos um sistema alimentar mais justo, eficiente e sustentável, garantimos não apenas a nutrição, mas também o bem-estar das futuras gerações.</p>
+            <p class="final-message">Este projeto reforça a importância da educação e da conscientização para a construção de um futuro alimentar próspero para todos.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projeto Escolar - Kauã Martini Adão</p>
+        <p>Colégio Estadual Profª Maria de Lurdes Rodrigues Morozowski - Paranaguá/PR</p>
+    </footer>
+</body>
+</html>
